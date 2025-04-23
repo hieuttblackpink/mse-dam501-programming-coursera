@@ -18,10 +18,17 @@ README.txt
    - Install required packages using pip:
      pip install pandas numpy matplotlib seaborn scikit-learn
 
-3. Running the Project:
+3. Download the Dataset:
+   - Download the KDD Cup 1999 dataset from [KDD Cup 1999 Data](https://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html).
+   - Unzip the dataset and place it in the `Original_Data/` folder.
+
+4. Preprocess the Dataset:
+   - Run the notebook `pre_processing_data_file.ipynb` to preprocess the dataset.
+   - This will create a dataset CSV `Data/` folder.
+
+5. Running the Project:
    - Run the notebook `Random_Forest_Classification.ipynb` step-by-step using Jupyter Notebook or VSCode with Jupyter extension.
    - The code will:
-     - Load the cleaned dataset (`Cleaned_Data/kddcup_cleaned_data_full.csv`)
      - Perform EDA (Exploratory Data Analysis)
      - Train and evaluate a Random Forest model
      - Output classification metrics and charts
